@@ -18,6 +18,3 @@ if __name__== "__main__":
             mixer.init()
             mixer.music.load('./audio/finish.mp3')
             mixer.music.play()
-            mixer.init()
-            mixer.music.load('./audio/1_run.mp3')
-            mixer.music.play()
