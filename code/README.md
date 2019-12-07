@@ -9,14 +9,14 @@ git clone: ```git clone https://github.com/krumaska/VashProject.git```
 
 `sudo apt-get install libusb-dev libpcsclite-dev i2c-tools`
 
-`cd pn532`
+`cd VashProject`
 
 `make init`
 
-## Test
-First, check i2c connects: `i2cdetect –y 1`
+## RUN
+First, check i2c connects: `i2cdetect -y 1`
 
-`python3 ~/VashProject/example.py`
+`python3 ~/VashProject/main.py`
 
 ## ETC
 - [PN532 example](https://github.com/hoanhan101/pn532)
