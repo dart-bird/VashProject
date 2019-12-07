@@ -1,7 +1,7 @@
 from gtts import gTTS
 
 tts_en = gTTS(text=text, lang='en')
-tts_kr = gTTS(text='안녕하세요',lang='ko')
+tts_kr = gTTS(text='세탁기 가동을 시작합니다',lang='ko')
 
 f = open(tempFileName,'wb')             
 tts_en.write_to_fp(f)    # 영어로 네번 말하고
