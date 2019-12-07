@@ -9,6 +9,10 @@ git clone: ```git clone https://github.com/krumaska/VashProject.git```
 
 `sudo apt-get install libusb-dev libpcsclite-dev i2c-tools`
 
+`sudo pip3 install gTTS`
+
+`sudo pip3 install pygame`
+
 `cd VashProject`
 
 `make init`
