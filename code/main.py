@@ -17,6 +17,14 @@ if __name__== "__main__":
             read = nfc.read()
             print("New NFC READ!")
             print(read)
+            if(read == [1, 0, 4, 8, 4, 141, 106, 79, 147, 245, 0]):
+                mixer.init()
+                mixer.music.load('./audio/failed.mp3')
+                mixer.music.play()
+                while pygame.mixer.music.get_busy():
+                clock.tick(1000)
+                pygame.mixer.music.stop()
+                continue
             mixer.init()
             mixer.music.load('./audio/finish.mp3')
             mixer.music.play()
